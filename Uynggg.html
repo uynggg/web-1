@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>uyanganyam</title>
+        <link rel="stylesheet" href="/public/css/uynggg.css">
+        <link rel="icon"  href="/public/zurg/icon.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" >
+                    <div class="card-front" id="card">
+                        <h2>Нэвтрэх цонх</h2>
+                    <!-- <form> -->
+                        <input type="email" name="username" id="username" class="input-box" placeholder="И-мэйл хаягаа оруулна уу? " required>
+                        <input type="password" name="password" id="password" class="input-box" placeholder="Нууц үг ээ оруулна уу? " required>
+                        <input type="checkbox"><span>Сануулах</span>
+                        <a href="/christmas.html">
+                        <button type="submit" class="submit-btn">Нэвтрэх</button>
+                        </a>
+                    <!-- </form> -->
+                    <button type="button" class="btn" onclick="openБүртгүүлэх()">Бүртгүүлэх</button>
+                    <a href="">Нууц үг сэргээх</a>
+                    
+                </div>
+                <div class="card-back" id="card1">
+                    <h2>Бүртгүүлэх цонх</h2>
+                        <form>
+                        <input type="text" class="input-box" placeholder="Нэр? " required>
+                        <input type="email" class="input-box" placeholder="И-мэйл хаягаа оруулна уу? " required>
+                        <input type="password" class="input-box" placeholder="Нууц үг ээ оруулна уу? " required>
+                        <a href="/christmas.html">
+                        <button type="submit" class="submit-btn">Бүртгүүлэх</button>
+                        </a>
+                        <input type="checkbox"><span>Сануулах</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openНэвтрэх()" > Нэвтрэх </button>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+            
+            function openБүртгүүлэх(){
+                var card =document.getElementById("card");
+                card.style.transform = "rotateY(180deg)";
+                var card1 =document.getElementById("card1");
+                card1.style.transform = "rotateY(360deg)";
+
+            }
+            function openНэвтрэх(){
+                var card1 =document.getElementById("card1");
+                card1.style.transform = "rotateY(180deg)";
+                var card =document.getElementById("card");
+                card.style.transform = "rotateY(360deg)";
+                
+            }
+        </script>
+    </body>
+</html>
